@@ -79,3 +79,4 @@ pub struct VerifyProofArgs {
     pub proof_hash: [u8; 32],
     pub public_inputs_hash: [u8; 32],
 }
+// rev-01035
