@@ -14,3 +14,4 @@ solana program deploy \
   target/deploy/fixr_core.so
 
 echo "Deploy complete"
+# rev-01120
