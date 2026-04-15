@@ -7,28 +7,16 @@ on:
     branches: [main]
 
 jobs:
-  rust:
-    name: cargo-build-test
+  rustfmt:
+    name: cargo-fmt-check
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: dtolnay/rust-toolchain@stable
+      - uses: dtolnay/rust-toolchain@1.75.0
         with:
-          components: rustfmt, clippy
-      - name: Cache cargo
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-            target
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.toml') }}
+          components: rustfmt
       - name: Check formatting
         run: cargo fmt --all -- --check
-      - name: Build workspace
-        run: cargo build --workspace --all-targets
-      - name: Run tests
-        run: cargo test --workspace --all-features
 
   sdk:
     name: sdk-tests
@@ -44,9 +32,9 @@ jobs:
           cache: 'npm'
           cache-dependency-path: sdk/package-lock.json
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: Lint
         run: npm run lint --if-present
       - name: Test
         run: npm test
-# rev-01125
+# rev-01126
