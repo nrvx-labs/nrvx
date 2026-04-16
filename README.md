@@ -13,7 +13,7 @@
 
 <p align="center">
   <a href="https://fixr.red"><img src="https://img.shields.io/badge/website-fixr.red-8b0000?style=for-the-badge" alt="Website" /></a>
-  <a href="https://x.com/fixr_red"><img src="https://img.shields.io/badge/x-@fixr_red-0a0a0a?style=for-the-badge&logo=x" alt="X" /></a>
+  <a href="https://x.com/fixrred"><img src="https://img.shields.io/badge/x-@fixrred-0a0a0a?style=for-the-badge&logo=x" alt="X" /></a>
 </p>
 
 # fixr --- In the red light, only what matters appears.
@@ -101,7 +101,7 @@ fixr/
 ## Links
 
 - Website: https://fixr.red
-- X: https://x.com/fixr_red
+- X: https://x.com/fixrred
 
 ## License
 
